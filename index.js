@@ -1,16 +1,33 @@
-const core = require('@actions/core');
 const {exec} = require('child_process');
-const util = require('util');
 
 
-exec('pip install -U pip');
+console.log('pip install -U pip...');
+exec('pip install -U pip', (error, stdout, stderr) => {
+  if (error) {
+    console.error(`exec error: ${error}`);
+    return;
+  }
+  console.log(`stdout: ${stdout}`);
+  console.error(`stderr: ${stderr}`);
+});
 
-exec('pip install poetry');
+console.log('pip install poetry...');
+exec('pip install poetry', (error, stdout, stderr) => {
+  if (error) {
+    console.error(`exec error: ${error}`);
+    return;
+  }
+  console.log(`stdout: ${stdout}`);
+  console.error(`stderr: ${stderr}`);
+});
 
-const createVirtualenv = core.getInput('create-virtualenv');
 
-const createVirtualenvFlag = createVirtualenv.toLocaleLowerCase().trim().startsWith('t') ? 'true' : 'false';
-
-exec(util.format('poetry config virtualenvs.create %s', createVirtualenvFlag));
-
-exec('poetry install');
+console.log('poetry install...');
+exec('poetry install', (error, stdout, stderr) => {
+  if (error) {
+    console.error(`exec error: ${error}`);
+    return;
+  }
+  console.log(`stdout: ${stdout}`);
+  console.error(`stderr: ${stderr}`);
+});
