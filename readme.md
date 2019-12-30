@@ -9,7 +9,7 @@ for projects that use poetry.
 ...
 - uses: actions/checkout@v1
 - uses: actions/setup-python@v1
-- uses: knowsuchagency/poetry-install@master
+- uses: knowsuchagency/poetry-install@v1
   env:
     POETRY_VIRTUALENVS_CREATE: false
 ```
