@@ -1,0 +1,23 @@
+{
+  "name": "poetry-install",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knowsuchagency/poetry-install.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knowsuchagency/poetry-install/issues"
+  },
+  "homepage": "https://github.com/knowsuchagency/poetry-install#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.0"
+  }
+}

@@ -1,0 +1,10 @@
+name: 'Poetry Install'
+description: 'Install Poetry and have it then install package dependencies.'
+inputs:
+  create-virtualenv:
+    description: 'Have poetry create a virtualenv for the project on installation.'
+    required: false
+    default: 'false'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
