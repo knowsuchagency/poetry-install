@@ -14,7 +14,7 @@ for projects that use poetry.
     POETRY_VIRTUALENVS_CREATE: false
 ```
 
-is equivalent to
+is equivalent (albeit more succinct) to
 
 ```yaml
 - uses: actions/setup-python@v1
