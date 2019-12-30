@@ -1,5 +1,6 @@
 name: 'Poetry Install'
 description: 'Install Poetry and have it then install package dependencies.'
+icon: arrow-up-circle
 inputs:
   create-virtualenv:
     description: 'Have poetry create a virtualenv for the project on installation.'
