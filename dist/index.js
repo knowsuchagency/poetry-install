@@ -46,13 +46,13 @@ module.exports =
 /***/ 63:
 /***/ (function(__unusedmodule, __unusedexports, __webpack_require__) {
 
-const {exec} = __webpack_require__(129);
+const {execSync} = __webpack_require__(129);
 
 
 console.log('pip install -U pip...');
-exec('pip install -U pip', (error, stdout, stderr) => {
+execSync('pip install -U pip', (error, stdout, stderr) => {
   if (error) {
-    console.error(`exec error: ${error}`);
+    console.error(`execSync error: ${error}`);
     return;
   }
   console.log(`stdout: ${stdout}`);
@@ -60,9 +60,9 @@ exec('pip install -U pip', (error, stdout, stderr) => {
 });
 
 console.log('pip install poetry...');
-exec('pip install poetry', (error, stdout, stderr) => {
+execSync('pip install poetry', (error, stdout, stderr) => {
   if (error) {
-    console.error(`exec error: ${error}`);
+    console.error(`execSync error: ${error}`);
     return;
   }
   console.log(`stdout: ${stdout}`);
@@ -71,9 +71,9 @@ exec('pip install poetry', (error, stdout, stderr) => {
 
 
 console.log('poetry install...');
-exec('poetry install', (error, stdout, stderr) => {
+execSync('poetry install', (error, stdout, stderr) => {
   if (error) {
-    console.error(`exec error: ${error}`);
+    console.error(`execSync error: ${error}`);
     return;
   }
   console.log(`stdout: ${stdout}`);
