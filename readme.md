@@ -1,6 +1,6 @@
 # Poetry Install Action
 
-This javascript action installs poetry and then uses it to install package dependencies
+This javascript action installs [poetry](poetry) and then uses it to install package dependencies
 for projects that use poetry.
 
 ## Example usage
@@ -27,3 +27,5 @@ is a more succinct
   env:
     POETRY_VIRTUALENVS_CREATE: false
 ```
+
+[poetry]: https://python-poetry.org
