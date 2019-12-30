@@ -1,7 +1,6 @@
 # Poetry Install Action
 
-This javascript action installs [poetry](poetry) and then uses it to install package dependencies
-for projects that use poetry.
+This javascript action installs [poetry](poetry) and then invokes it to install project dependencies.
 
 ## Example usage
 
