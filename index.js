@@ -11,6 +11,6 @@ const createVirtualenv = core.getInput('create-virtualenv');
 
 const createVirtualenvFlag = createVirtualenv.toLocaleLowerCase().trim().startsWith('t') ? 'true' : 'false';
 
-exec(util.format('poetry config virtualenvs.create %s --local', createVirtualenvFlag));
+exec(util.format('poetry config virtualenvs.create %s', createVirtualenvFlag));
 
 exec('poetry install');
