@@ -26,6 +26,7 @@ console.log('poetry install...');
 execSync('poetry install', (error, stdout, stderr) => {
   if (error) {
     console.error(`execSync error: ${error}`);
+    console.error(`stderr: ${stderr}`);
     return;
   }
   console.log(`stdout: ${stdout}`);
